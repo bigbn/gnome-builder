@@ -1191,7 +1191,7 @@ ide_buffer_class_init (IdeBufferClass *klass)
     g_param_spec_boolean ("highlight-diagnostics",
                           "Highlight Diagnostics",
                           "If diagnostic warnings and errors should be highlighted.",
-                          FALSE,
+                          TRUE,
                           (G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS));
 
   properties [PROP_READ_ONLY] =
@@ -1286,6 +1286,8 @@ ide_buffer_init (IdeBuffer *self)
   IdeBufferPrivate *priv = ide_buffer_get_instance_private (self);
 
   IDE_ENTRY;
+
+  priv->highlight_diagnostics = TRUE;
 
   priv->file_signals = egg_signal_group_new (IDE_TYPE_FILE);
   egg_signal_group_connect_object (priv->file_signals,
