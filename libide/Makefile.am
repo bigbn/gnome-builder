@@ -199,6 +199,13 @@ libide_1_0_la_public_sources = \
 	ide-test-suite.h \
 	ide-thread-pool.c \
 	ide-thread-pool.h \
+	ide-tree-builder.c \
+	ide-tree-builder.h \
+	ide-tree-node.c \
+	ide-tree-node.h \
+	ide-tree-types.h \
+	ide-tree.c \
+	ide-tree.h \
 	ide-types.h \
 	ide-unsaved-file.c \
 	ide-unsaved-file.h \
@@ -299,6 +306,7 @@ libide_1_0_la_SOURCES = \
 	ide-source-view-capture.h \
 	ide-source-view-movements.c \
 	ide-source-view-movements.h \
+	ide-tree-private.h \
 	ide-vim-iter.c \
 	ide-vim-iter.h \
 	ide-workbench-actions.c \
