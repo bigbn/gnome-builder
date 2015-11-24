@@ -50,7 +50,7 @@ static gchar          *css = "\
     bind \"<ctrl>s\" { \"action\" (\"file\", \"save\", \"\") }; \
 } \
 IdeSourceView { \
-    gtk-key-bindings: file-keybindings; \
+    -gtk-key-bindings: file-keybindings; \
 } \
 ";
 
