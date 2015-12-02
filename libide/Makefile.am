@@ -315,6 +315,8 @@ libide_1_0_la_SOURCES = \
 	ide-source-view-capture.h \
 	ide-source-view-movements.c \
 	ide-source-view-movements.h \
+	ide-theme-manager.c \
+	ide-theme-manager.h \
 	ide-tree-private.h \
 	ide-vim-iter.c \
 	ide-vim-iter.h \
